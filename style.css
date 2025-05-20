@@ -46,7 +46,7 @@ h1 {
 }
 
 .verde {
-  background: linear-gradient(135deg, #00c853, #64dd17);
+  background: linear-gradient(135deg, #007932, #64dd17);
   border-top-left-radius: 75px;
 }
 
@@ -56,7 +56,7 @@ h1 {
 }
 
 .amarelo {
-  background: linear-gradient(135deg, #fdd835, #ffeb3b);
+  background: linear-gradient(135deg, #cca700, #ffeb3b);
   border-bottom-left-radius: 75px;
 }
 
