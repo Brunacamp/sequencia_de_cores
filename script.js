@@ -6,6 +6,13 @@ let jogadorSequencia = [];
 let nivel = 0;
 let turnoDoJogador = false;
 
+const sons = {
+  green: new Audio('audios/som_receba.mp3'),
+  red: new Audio('audios/som_receba.mp3'),
+  yellow: new Audio('audios/som_receba.mp3'),
+  blue: new Audio('audios/som_receba.mp3'),
+};
+
 const botaoIniciar = document.getElementById('botaoIniciar');
 const contagemNivel = document.getElementById('nivel');
 
@@ -50,9 +57,13 @@ function mostrarSequencia() {
 function flashColor(cor) {
   const el = document.getElementById(cor);
   el.style.opacity = 1;
+   el.style.transform = 'translateY(-8px)'; 
+   sons[cor].currentTime = 0; 
+    sons[cor].play(); 
   setTimeout(() => {
+    el.style.transform = 'translateY(0)'; 
     el.style.opacity = 0.6;
-  }, 300);
+  }, 300);  
 }
 
 function cliqueJogador(cor) {
