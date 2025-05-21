@@ -92,14 +92,15 @@ h1 {
     color: gray;
     margin-top: 3%;
 }
-.senai{
+.senai {
   margin-left: 2%;
   width: 200px;
   display: flex;
   margin-bottom: -150px;
+  transition: 0.5s; /* <- Mover para cá */
 }
-.senai:hover{
+
+.senai:hover {
   cursor: pointer;
   transform: translateY(-6px);
-  transition: 0.5s;
 }

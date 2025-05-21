@@ -1,3 +1,5 @@
+AOS.init();
+
 const cores = ['green', 'red', 'yellow', 'blue'];
 let jogoSequencia = [];
 let jogadorSequencia = [];
